@@ -75,7 +75,7 @@ $.getJSON("source/prefectures2.geojson", function (data) {
 var base = L.tileLayer('', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: ''
 }).addTo(map);
 
 //ここからタイルマップ
