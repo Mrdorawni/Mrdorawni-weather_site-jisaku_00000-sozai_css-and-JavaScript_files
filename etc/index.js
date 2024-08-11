@@ -83,55 +83,55 @@ var base = L.tileLayer('', {
 var google1 = L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>'
 });
 
 var google2 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>'
 }); //最初に表示させるタイルに addTo() をつける
 
 var google3 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>'
 });
 
 var google4 = L.tileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://www.google.com/maps" target="_blank">googleマップ</a>'
 });
 
 var tanshoku = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
 });
 
 var hyojun = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
 });
 
 var dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://carto.com/" target="_blank">CARTO Dark</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://carto.com/" target="_blank">CARTO Dark</a>'
 });
 
 var inei = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
 });
 
 var hyoko_color = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png', {
     pane: "pane_map",
     style: PolygonLayer_Style_nerv_1,
-    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、地震・津波情報:<a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>'
+    attribution: '地図情報:<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
 });
 
 
