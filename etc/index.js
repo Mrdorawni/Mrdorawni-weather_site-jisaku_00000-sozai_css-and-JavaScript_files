@@ -1,7 +1,6 @@
 
 var map = L.map('map').setView([36.575, 137.984], 6);
-L.control.scale({ maxWidth: 150, position: 'bottomright', imperial: false }).addTo(map);
-map.zoomControl.setPosition('topright')
+map.zoomControl.setPosition('bottomleft')
 
 
 
@@ -15,11 +14,10 @@ map.zoomControl.setPosition('topright')
     */
 
 //レイヤの順番z-index
-map.createPane("tsunami_map").style.zIndex = 110; //津波
-map.createPane("tsunami_map2").style.zIndex = 120; //津波
 map.createPane("back").style.zIndex = 1; //地図
 map.createPane("pane_map").style.zIndex = 5; //地図
-map.createPane("nihon").style.zIndex = 7; //地図
+map.createPane("nihon").style.zIndex = 6; //地図
+map.createPane("nihon2").style.zIndex = 7; //地図
 
 
 var PolygonLayer_Style_nerv_1 = {
@@ -48,9 +46,17 @@ var PolygonLayer_Style_nerv_W = {
 }
 
 //日本境
+var nihon2 = {
+    "color": "#000000",
+    "weight": 1.5,
+    "opacity": 1,
+    "fillColor": "#ECEDEC",
+    "fillOpacity": 0
+}
+
 var nihon = {
-    "color": "#9C9E9B",
-    "weight": 1.0,
+    "color": "#ffffff",
+    "weight": 5.5,
     "opacity": 1,
     "fillColor": "#ECEDEC",
     "fillOpacity": 0
@@ -151,6 +157,14 @@ L.control.layers({
     "地理院色別標高図": hyoko_color,
     
 }).addTo(map);
+
+$.getJSON("source/prefectures.geojson", function (data) {
+    L.geoJson(data, {
+        pane: "nihon2",
+        style: nihon2
+    }).addTo(map);
+});
+
 
 $.getJSON("source/prefectures.geojson", function (data) {
     L.geoJson(data, {
